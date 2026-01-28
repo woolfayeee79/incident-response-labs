@@ -1,1 +1,29 @@
 
+# Incident Response Case Report — Webstrike Lab
+
+**Date Completed:** 10:00 AM CT  
+**Investigator:** Megan W  
+**Lab / Dataset Source:** Webstrike Lab   
+**Environment:** Linux Lite  
+**Tools Used:** Wireshark  
+## Executive Summary
+Suspicious file was found on a webserver at ip 172.31.24.160
+## Detection Source
+- Suspicious traffic review
+## Initial Indicators of Compromise (IOCs)
+- Found Wireshark ip 117.11.88.124 and used https://ipgeolocation.io/ 
+- Found the origin of the ip Tianjin, China
+| Type | Value | Source |
+|------|------|-------|
+| IP Address | 117.11.88.124| PCAP |
+| Domain | shoproma.com | DNS |
+| Protocol | HTTPS | Wireshark |
+| URI | /payload | Packet Analysis |
+
+## Analysis and Findings
+- Suspicious from a Linux based Mozilla client
+
+## MITRE ATT&CK Mapping
+
+| Behavior | Tactic | Technique | ID |
+|--------|-------|---------|----|
